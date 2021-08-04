@@ -30,7 +30,7 @@ function mostrar()
 
 	cantidadVacunas=parseInt(prompt("Cuantas vacunas ingresan"));
 	while(isNaN(cantidadVacunas) || cantidadVacunas < 1){
-		cantidadVacunas=parseInt(prompt("Ingrese la cantidad de vacunas correctas"))
+		cantidadVacunas=parseInt(prompt("Ingrese la cantidad de vacunas correctas"));
 	}
 
 	origen=prompt("Las vacunas vienen de USA,Asia o europa?").toLowerCase();
@@ -39,12 +39,12 @@ function mostrar()
 	}
 
 
-	costoVuelo=parseInt(prompt("Ingrese el costo del vuelo (entre 1 millon y 5 millones de pesos:"))
+	costoVuelo=parseInt(prompt("Ingrese el costo del vuelo (entre 1 millon y 5 millones de pesos:"));
 	while(isNaN(costoVuelo)) {
-		costoVuelo=parseInt(prompt("Ingrese el costo correcto:"))
+		costoVuelo=parseInt(prompt("Ingrese el costo correcto:"));
 	}
 	while (!(costoVuelo >= 1000000 && costoVuelo <= 5000000)){
-		costoVuelo=parseInt(prompt("Ingrese el costo correcto:"))
+		costoVuelo=parseInt(prompt("Ingrese el costo correcto:"));
 	}
 
 	if (origen=="usa"){
@@ -57,13 +57,13 @@ function mostrar()
 		contadoUsa++;
 	}
 	if (contadoAsia > contadoEuropa && contadoAsia > contadoUsa){
-		origenMayorCantidad="asia"
+		origenMayorCantidad="asia";
 	}
 	else if(contadoEuropa >= contadoAsia && contadoEuropa > contadoUsa){
-		origenMayorCantidad="Europa"
+		origenMayorCantidad="Europa";
 	}
 	else{
-		origenMayorCantidad="usa"
+		origenMayorCantidad="usa";
 	}
 
 
