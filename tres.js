@@ -19,6 +19,10 @@ function mostrar()
 	let cantidadVacunas;
 	let origen;
 	let costoVuelo;
+	let contadoAsia;
+	let contadoEuropa;
+	let contadoUsa;
+
 	let origenMayorCantidad;
 	let promedioVacunasAsia;
 	let costoSinDescuento;
@@ -34,6 +38,7 @@ function mostrar()
 		origen=prompt("ingrese de donde vinieron las vacunas correctamente(usa,asia,europa)");
 	}
 
+
 	costoVuelo=parseInt(prompt("Ingrese el costo del vuelo (entre 1 millon y 5 millones de pesos:"))
 	while(isNaN(costoVuelo)) {
 		costoVuelo=parseInt(prompt("Ingrese el costo correcto:"))
@@ -42,5 +47,14 @@ function mostrar()
 		costoVuelo=parseInt(prompt("Ingrese el costo correcto:"))
 	}
 
+	if (origen=="usa"){
+		contadoAsia++;
+	}
+	if (origen=="usa"){
+		contadoEuropa++;
+	}
+	if (origen=="usa"){
+		contadoUsa++;
+	}
 
 }
