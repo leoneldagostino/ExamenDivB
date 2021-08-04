@@ -56,5 +56,15 @@ function mostrar()
 	if (origen=="usa"){
 		contadoUsa++;
 	}
+	if (contadoAsia > contadoEuropa && contadoAsia > contadoUsa){
+		origenMayorCantidad="asia"
+	}
+	else if(contadoEuropa >= contadoAsia && contadoEuropa > contadoUsa){
+		origenMayorCantidad="Europa"
+	}
+	else{
+		origenMayorCantidad="usa"
+	}
+
 
 }
